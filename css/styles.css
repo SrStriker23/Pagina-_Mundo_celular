@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #fcf3db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    background-color: #00b2aa;
+    width: 80%;
+    height: 5em;
+}
