@@ -111,9 +111,10 @@ body{
     background-color:#757575;
 }
 .parrafo-noti-cont p{
-    font-size: 22px;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
-    color: white;
+    text-align: center;
+    font-size: 20px;
+    font-family:Helvetica, sans-serif;
+    color: rgb(241, 240, 240);
 }
 
 .asides{
@@ -133,8 +134,8 @@ body{
 }
 .parrafo-asides{
     font-size: 20px;
-    font-family: 'Trebuchet MS', sans-serif;
-    color: white;
+    font-family:Helvetica, sans-serif;
+    color: rgb(241, 240, 240);
 }
 .caja-foto{
     width: 40%;
@@ -161,12 +162,9 @@ body{
     width: 95%;
 }
 .texto-samsung{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 95%;
     font-size: 20px;
+    font-family:sans-serif;
 }
 .noticia-grande{
     display: flex;
@@ -194,9 +192,13 @@ body{
     text-align: center;
     background-color:  #747474;
 }
+.redes h2{
+    color: rgb(241, 240, 240);
+    font-size: 30px;  
+}
 .redes p{
+    color: rgb(241, 240, 240);
     width: 80%;
-    display: flex;
     font-size: 20px;
 }
 .caja-redes{
