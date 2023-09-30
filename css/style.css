@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .prueba-sass {
   display: flex;
-  background-color: #555555;
+  background-color: #de4242;
   width: 95%;
   height: 35em;
 }
@@ -9,7 +9,7 @@
 .foto-contenedor {
   width: 40%;
   height: 100%;
-  background-color: #555555;
+  background-color: #de4242;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@
 .texto {
   width: 60%;
   height: 100%;
-  background-color: #555555;
+  background-color: #de4242;
   text-align: center;
   display: flex;
   flex-direction: column;
