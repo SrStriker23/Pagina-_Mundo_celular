@@ -450,4 +450,43 @@ body {
   font-weight: 600;
   color: var(--font-color);
   cursor: pointer;
+}
+
+/*nosotros*/
+.caja-grande {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 50em;
+  width: 95%;
+  background-color: wheat;
+}
+
+.cajas-chicas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 90%;
+  width: 50%;
+  background-color: black;
+  margin: 1rem;
+}
+
+.cajas-asides {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 90%;
+  width: 25%;
+  background-color: black;
+  margin: 1rem;
 }/*# sourceMappingURL=styles.css.map */
