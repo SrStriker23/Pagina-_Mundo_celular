@@ -26,7 +26,7 @@
       <nav>
           <a class="linkeado" href="../index.html">Inicio</a>
           <a class="linkeado" href="../nosotros/nosotros.html">Nosotros</a>
-          <a class="linkeado" href="../formulario/formulario.html">Formulario</a>
+          <a class="linkeado" href="../formulario/formulario.php">Formulario</a>
           <a class="linkeado" href="../crud/principal.php">CRUD</a>
           <a class="linkeado" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Cuenta</a>
       </nav>
@@ -56,7 +56,7 @@
                              </form>
                           </div>
                           <div class="flip-card__back">
-                            <a href="../formulario/formulario.html" style="text-decoration: none;" class="title">Registro</a>
+                            <a href="../formulario/formulario.php" style="text-decoration: none;" class="title">Registro</a>
                              <form class="flip-card__form" action="">
                                 <input class="flip-card__input" placeholder="Nombre" type="name">
                                 <input class="flip-card__input" name="email" placeholder="Correo electronico" type="email">

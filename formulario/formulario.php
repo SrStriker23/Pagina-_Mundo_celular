@@ -18,7 +18,6 @@
           <a class="linkeado" href="../index.php">Inicio</a>
           <a class="linkeado" href="../nosotros/nosotros.html">Nosotros</a>
           <a class="linkeado" href="../formulario/formulario.html">Formulario</a>
-          <a class="linkeado" href="../crud/principal.php">CRUD</a>
           <a class="linkeado" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Cuenta</a>
       </nav>
   </nav>
@@ -88,17 +87,26 @@
           </div>
     </div>
     <form action="" class="formulario" method="POST">
-      
       <div class="registrate my-3">
         <div class="text-center justify-content-center align-items-center my-3" style="font-size: 30px; color: black;">Registrate</div>
-
+        <?php 
+        include("../crud/conexion.php");
+        include("../crud/registro.php");
+        ?>
         <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
         <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos">
         <input type="text" class="form-control mb-3" name="rut" placeholder="Rut">
         <input type="text" class="form-control mb-3" name="direccion" placeholder="Direccion">
-        <input type="radio" class="form-check-input" name="sexo" value="Hombre"> Hombre<br>
-        <input type="radio" class="form-check-input" name="sexo" value="Mujer"> Mujer<br>
-        <input type="radio" class="form-check-input" name="sexo" value="Otro"> Otro
+        <div class="container-fluid my-2">
+          <div class="row">
+            <div class="col-6 d-flex flex-column align-items-center justify-content-center">Sexo</div>
+            <div class="col-6">
+              <input type="radio" class="form-check-input" name="sexo" value="Hombre"> Hombre<br>
+              <input type="radio" class="form-check-input" name="sexo" value="Mujer"> Mujer<br>
+              <input type="radio" class="form-check-input" name="sexo" value="Otro"> Otro
+            </div>
+          </div>
+        </div>
         <input type="date" max="2024-01-01" class="form-control mb-3" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
         <input type="number" min="18" max="120" class="form-control mb-3" name="edad" placeholder="Edad">
         <div class="d-flex justify-content-center align-items-center">

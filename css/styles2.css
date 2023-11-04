@@ -473,12 +473,11 @@ body {
   }
   
 .registrate {
-    background-color: #d63f3f;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 65%;
+    width: 50%;
     height: 100%;
   }
 .formulario{
@@ -488,5 +487,5 @@ body {
     align-items: center;
     width: 95%;
     height: 100%;
-    background-color: #B2B2B2;
+    background-color: #8c8c8c;
 }
