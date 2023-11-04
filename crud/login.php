@@ -5,21 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo celular</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/styles.css">
-    
+    <link rel="stylesheet" href="#">
 </head>
 <body>
   <header class="header">
-    <a class="logo-pequeño" href="index.html">
-        <img src="img/2.png" alt="Logo pequeño">
+    <a class="logo-pequeño" href="../index.html">
+        <img src="../img/2.png" alt="Logo pequeño">
     </a>
   </header>
   <nav class="navegador">
       <nav>
-          <a class="linkeado" href="index.html">Inicio</a>
-          <a class="linkeado" href="nosotros/nosotros.html">Nosotros</a>
-          <a class="linkeado" href="formulario/formulario.html">Formulario</a>
-          <a class="linkeado" href="crud/principal.php">CRUD</a>
+          <a class="linkeado" href="../index.php">Inicio</a>
+          <a class="linkeado" href="../nosotros/nosotros.html">Nosotros</a>
+          <a class="linkeado" href="../formulario/formulario.html">Formulario</a>
+          <a class="linkeado" href="#">CRUD</a>
           <a class="linkeado" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Cuenta</a>
       </nav>
   </nav>
@@ -48,7 +47,7 @@
                              </form>
                           </div>
                           <div class="flip-card__back">
-                            <a href="formulario/formulario.html" style="text-decoration: none;" class="title">Registro</a>
+                            <a href="../formulario/formulario.html" style="text-decoration: none;" class="title">Registro</a>
                              <form class="flip-card__form" action="">
                                 <input class="flip-card__input" placeholder="Nombre" type="name">
                                 <input class="flip-card__input" name="email" placeholder="Correo electronico" type="email">
@@ -68,14 +67,14 @@
         </div>
       </div>
     </div>
-    <div class="carrusel">
+    <div class="carrusel ">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000">
-                <img src="img/banner mi mundo.png" class="d-block w-100" alt="banner mi mundo negro">
+                <img src="../img/banner mi mundo.png" class="d-block w-100" alt="banner mi mundo negro">
               </div>
               <div class="carousel-item" data-bs-interval="5000">
-                <img src="img/banner.png" class="d-block w-100" alt="banner mi mundo azul">
+                <img src="../img/banner.png" class="d-block w-100" alt="banner mi mundo azul">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -88,57 +87,23 @@
             </button>
           </div>
     </div>
-    <section class="tarjetas d-flex justify-content-center align-items-center ">
-        <div class="row">
-            <div class="col-4">
-              <div class="card text-center" style=" width: 20rem; height: 25rem;">
-                <img src="img/carcasas 2.jpg"  class="card-img-top" alt="carcasas">
-                <div class="card-body">
-                  <h4 class="card-title">Protege tu celular</h4>
-                  <p class="card-text ">Protege tu smartphone con estilo: descubre nuestras carcasas de alta calidad.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card text-center" style=" width: 20rem; height: 25rem;">
-                <img src="img/cargadores celular png.jpg" class="card-img-top" alt="protector">
-                <div class="card-body">
-                  <h4 class="card-title">Potencia tus dispositivos</h4>
-                  <p class="card-text">Descubre nuestra selección de cargadores para celulares de alta calidad en nuestra tienda.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-4">
-              <div class="card text-center" style=" width: 20rem; height: 25rem;">
-                <img src="img/protector de pantalla.jpg" class="card-img-top" alt="protector">
-                <div class="card-body">
-                  <h4 class="card-title">Proteje tu celular</h4>
-                  <p class="card-text">Salvaguarda la pantalla de tu celular con nuestra protección de vanguardia.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-    </section>
-    <section class="noticia d-flex justify-content-center align-items-center">
-        <div class="card h-100 d-flex justify-content-center align-items-center" style="background-color: #B2B2B2;">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="img/Galaxy-S23-Series.jpg" class="img-fluid rounded-start p-2" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h1 class="card-title text-center mb-4">La nueva generación de Samsung</h1>
-                  <p class="card-text text-center">El Samsung Galaxy S23 Ultra se erige como un auténtico buque insignia, combinando un rendimiento sorprendente, una pantalla deslumbrante que te sumerge en tus contenidos favoritos y una cámara de nivel profesional que redefine la forma en que capturamos momentos. Desde su diseño elegante hasta sus capacidades innovadoras, este smartphone demuestra que la excelencia no tiene límites. Con el S23 Ultra, estás experimentando lo último en tecnología móvil, una experiencia verdaderamente ultramoderna en la palma de tu mano que supera todas las expectativas.</p>
-                </div>
-              </div>
-            </div>
-        </div>
-    </section>
+    
+    <?php
+    include("conexion.php");
+    include("controlador.php");
+    ?>
+
+    <form class="d-flex justify-content-center align-items-center " id="form" method="post">
+        <input class="input" type="text" name="usuario" placeholder="Nombre de usuario" maxlength="16">
+        <input type="password" name="password" placeholder="Contraseña">
+        <input name="btningresar" type="submit" value="Iniciar">
+    </form>
+    
     <section class="caja-redes-sociales">
       <div class="row h-100">
         <div class="col-6  d-flex flex-column justify-content-center align-items-center text-center ">
           <h2>Contáctate con nosotros</h2>
-          <p class="animated-text">¡No te pierdas ninguna novedad del emocionante mundo de los teléfonos celulares! Conéctate con nosotros a través de nuestras redes sociales y mantente al tanto de todo lo relacionado con la tecnología móvil.</p>
+          <p>¡No te pierdas ninguna novedad del emocionante mundo de los teléfonos celulares! Conéctate con nosotros a través de nuestras redes sociales y mantente al tanto de todo lo relacionado con la tecnología móvil.</p>
         </div>
         <div class="col-6 d-flex flex-column justify-content-center align-items-center text-center ">
           <div class="social-media">

@@ -1,8 +1,3 @@
-@import "form";
-$color-caja2: #747474;
-$color-caja1:#B2B2B2;
-$width-pagina:95%;
-
 body {
     margin: 0;
     padding: 0;
@@ -13,121 +8,140 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.header{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  background-color:#171717;
-  width: $width-pagina;
-  height: 10em;
-}
-.logo-pequeño{
-  object-fit: cover;
-  height: 100%;
-  width: 15%;
-}
-.logo-pequeño >img{
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-.navegador{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color:black;
-  width: $width-pagina;
-  height: 4em;
-}
-.linkeado{
-  font-family: 'Timer New Roman';
-  text-align: center;
-  text-decoration: none;  
-  padding: 25px;
-  color: white;
-}
-.navegador a:hover{
-  background-color: white;
-  color: black;
-}
-.barra-nav{
-    width: $width-pagina;
-}
-.carrusel{
-    width: $width-pagina;
-}
-.tarjetas{
-    width: $width-pagina;
+  }
+  
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #171717;
+    width: 95%;
+    height: 10em;
+  }
+  
+  .logo-pequeño {
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 100%;
+    width: 15%;
+  }
+  
+  .logo-pequeño > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .navegador {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    width: 95%;
+    height: 4em;
+  }
+  
+  .linkeado {
+    font-family: "Timer New Roman";
+    text-align: center;
+    text-decoration: none;
+    padding: 25px;
+    color: white;
+  }
+  
+  .navegador a:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .barra-nav {
+    width: 95%;
+  }
+  
+  .carrusel {
+    width: 95%;
+  }
+  
+  .tarjetas {
+    width: 95%;
     height: 450px;
-    background-color: $color-caja2;
-}
-.card-img-top{
+    background-color: #747474;
+  }
+  
+  .card-img-top {
     height: 50%;
-}
-.noticia{
-    width: $width-pagina;
+  }
+  
+  .noticia {
+    width: 95%;
     height: 350px;
-    background-color: $color-caja2;
-}
-.preguntas{
-    width: $width-pagina;
+    background-color: #747474;
+  }
+  
+  .preguntas {
+    width: 95%;
     height: 450px;
-    background-color: $color-caja1;
-}
-.caja-redes-sociales{
-    width: $width-pagina;
+    background-color: #B2B2B2;
+  }
+  
+  .caja-redes-sociales {
+    width: 95%;
     height: 250px;
-    background-color:$color-caja2;
-}
-
-.caja-redes-sociales {
-  width: 95%;
-  height: 250px;
-  background-color: $color-caja2;
-}
-@keyframes animacion-parrafo {
-  0% {
-    object-fit: cover;
-    transform: scale(1);
-    color: black;
+    background-color: #747474;
   }
-  50% {
-    object-fit: cover;
-    transform: scale(1.2);
-    color: red;
+  
+  .caja-redes-sociales {
+    width: 95%;
+    height: 250px;
+    background-color: #747474;
   }
-  100% {
-    transform: scale(1);
-    color: black;
+  
+  @keyframes animacion-parrafo {
+    0% {
+      -o-object-fit: cover;
+         object-fit: cover;
+      transform: scale(1);
+      color: black;
+    }
+    50% {
+      -o-object-fit: cover;
+         object-fit: cover;
+      transform: scale(1.2);
+      color: red;
+    }
+    100% {
+      transform: scale(1);
+      color: black;
+    }
   }
-}
-
-.animated-text {
-  font-size: 18px;
-}
-
-.animated-text:hover {
-  animation: animacion-parrafo 2s infinite;
-}
-.footer {
+  .animated-text {
+    font-size: 18px;
+  }
+  
+  .animated-text:hover {
+    animation: animacion-parrafo 2s infinite;
+  }
+  
+  .footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    width: $width-pagina;
+    width: 95%;
     background-color: black;
     height: 4em;
     color: white;
   }
-.social-media {
+  
+  .social-media {
     width: 90%;
     height: 100%;
-    background-color: $color-caja2;
+    background-color: #747474;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -197,12 +211,12 @@ body {
       transform: translateY(0);
       opacity: 1;
     }
-  }/*# sourceMappingURL=style.css.map */
-
-.form-modal{
+  } 
+  .form-modal {
     width: 100%;
     height: 470px;
-}
+  }
+  
   .wrapper {
     --input-focus: #2d8cf0;
     --font-color: #323232;
@@ -210,10 +224,11 @@ body {
     --bg-color: #fff;
     --bg-color-alt: #666;
     --main-color: #323232;
-      /* display: flex; */
-      /* flex-direction: column; */
-      /* align-items: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
   }
+  
   /* switch card */
   .switch {
     transform: translateY(-200px);
@@ -229,7 +244,7 @@ body {
   
   .card-side::before {
     position: absolute;
-    content: 'Sesion';
+    content: "Sesion";
     left: -70px;
     top: 0;
     width: 100px;
@@ -240,7 +255,7 @@ body {
   
   .card-side::after {
     position: absolute;
-    content: 'Registro';
+    content: "Registro";
     left: 70px;
     top: 0;
     width: 100px;
@@ -301,16 +316,15 @@ body {
     text-decoration: underline;
   }
   
-  /* card */ 
-  
+  /* card */
   .flip-card__inner {
     width: 300px;
     height: 350px;
     position: relative;
     background-color: transparent;
     perspective: 1000px;
-      /* width: 100%;
-      height: 100%; */
+    /* width: 100%;
+    height: 100%; */
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
@@ -330,7 +344,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     background: lightgrey;
     gap: 20px;
@@ -373,6 +386,11 @@ body {
     outline: none;
   }
   
+  .flip-card__input::-moz-placeholder {
+    color: var(--font-color-sub);
+    opacity: 0.8;
+  }
+  
   .flip-card__input::placeholder {
     color: var(--font-color-sub);
     opacity: 0.8;
@@ -399,21 +417,17 @@ body {
     font-weight: 600;
     color: var(--font-color);
     cursor: pointer;
-  } 
-
-
-
-
-/*nosotros*/
-
-.caja-grande{
+  }
+  
+  /*nosotros*/
+  .caja-grande {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 825px;
     width: 95%;
-    background-color:$color-caja2;
+    background-color: #747474;
   }
   
   .cajas-chicas {
@@ -422,7 +436,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 90%;
     width: 50%;
     background-color: black;
@@ -435,38 +450,43 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     height: 90%;
     width: 25%;
     margin: 1rem;
   }
-.tarjetas-laterales{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 50%;
+  
+  .tarjetas-laterales {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+  }
+  
+  .caja-crud {
+    width: 95%;
+    height: 600px;
+    background-color: #B2B2B2;
+  }
+  
+.registrate {
+    background-color: #d63f3f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 100%;
+  }
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 100%;
+    background-color: #B2B2B2;
 }
-
-//Crud
-
-.caja-crud{
-  width: $width-pagina;
-  height: 600px;
-  background-color: $color-caja1;
-}
-
-.registrate{
-  background-color: red;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 500px;
-}
-
-
-//css de el nuevo login
-

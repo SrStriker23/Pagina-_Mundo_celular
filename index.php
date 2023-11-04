@@ -5,20 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mundo celular</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
   <header class="header">
-    <a class="logo-pequeño" href="../index.html">
-        <img src="../img/2.png" alt="Logo pequeño">
+    <a class="logo-pequeño" href="index.html">
+        <img src="img/2.png" alt="Logo pequeño">
     </a>
   </header>
   <nav class="navegador">
       <nav>
-          <a class="linkeado" href="../index.php">Inicio</a>
-          <a class="linkeado" href="nosotros.html">Nosotros</a>
-          <a class="linkeado" href="../formulario/formulario.html">Formulario</a>
-          <a class="linkeado" href="../crud/principal.php">CRUD</a>
+          <a class="linkeado" href="index.php">Inicio</a>
+          <a class="linkeado" href="nosotros/nosotros.html">Nosotros</a>
+          <a class="linkeado" href="crud/principal.php">CRUD</a>
           <a class="linkeado" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Cuenta</a>
       </nav>
   </nav>
@@ -40,14 +39,15 @@
                        <div class="flip-card__inner">
                           <div class="flip-card__front">
                              <div class="title">Inicio de sesion</div>
-                             <form class="flip-card__form" action="">
-                                <input class="flip-card__input" name="email" placeholder="Correo electronico" type="email">
+                             <form class="flip-card__form" method="post" action="">
+                                <input class="flip-card__input" name="usuario" placeholder="Correo electronico" type="text">
                                 <input class="flip-card__input" name="password" placeholder="contraseña" type="password">
-                                <button class="flip-card__btn">Siguiente</button>
+                                <input class="flip-card__btn" name="btningresar" type="submit" value="Iniciar">
                              </form>
+
                           </div>
                           <div class="flip-card__back">
-                             <a href="../formulario/formulario.html" style="text-decoration: none;" class="title">Registro</a>
+                            <a href="formulario/formulario.html" style="text-decoration: none;" class="title">Registro</a>
                              <form class="flip-card__form" action="">
                                 <input class="flip-card__input" placeholder="Nombre" type="name">
                                 <input class="flip-card__input" name="email" placeholder="Correo electronico" type="email">
@@ -71,10 +71,10 @@
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active" data-bs-interval="5000">
-                <img src="../img/banner mi mundo.png" class="d-block w-100" alt="banner mi mundo negro">
+                <img src="img/banner mi mundo.png" class="d-block w-100" alt="banner mi mundo negro">
               </div>
               <div class="carousel-item" data-bs-interval="5000">
-                <img src="../img/banner.png" class="d-block w-100" alt="banner mi mundo azul">
+                <img src="img/banner.png" class="d-block w-100" alt="banner mi mundo azul">
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -87,93 +87,51 @@
             </button>
           </div>
     </div>
-    <section class="caja-grande">
-        <div class="cajas-asides">
-            <div class="tarjetas-laterales pb-3">
-                <div class="card w-100 h-100">
-                    <img src="../img/audifonos.jpg" class="card-img-top" alt="Audifonos">
-                    <div class="card-body">
-                      <h5 class="card-title">Experiencia auditiva</h5>
-                      <p class="card-text">Encuentra una variedad de auriculares de alta calidad.</p>
-                      <a href="#" class="btn btn-primary">Compra aqui</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="tarjetas-laterales pt-3">
-                <div class="card w-100 h-100">
-                    <img src="../img/baterias.jpg" class="card-img-top" alt="Bateria portatil">
-                    <div class="card-body">
-                      <h5 class="card-title">Nunca te quedes sin energía</h5>
-                      <p class="card-text">Explora nuestras baterías portátiles para mantener tus dispositivos móviles cargados en todo momento</p>
-                      <a href="#" class="btn btn-primary">Compra aqui</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="cajas-chicas">
-            <h1 class="my-3" style="color: white;">Bienvenidos a Mundo celular: Tu Fuente en Línea para Todo sobre Celulares</h1>
-            <p class="" style="color: white; font-size: 16px; text-align: justify; width: 90%;">En Mundo celular, estamos dedicados a mantenerte al día con todas las novedades, tendencias y avances en el emocionante mundo de los dispositivos móviles. Somos tu destino confiable para explorar todo lo relacionado con los teléfonos inteligentes, tabletas y wearables.
-                Nuestro equipo de expertos apasionados por la tecnología se esfuerza por brindarte análisis imparciales, reseñas detalladas de productos, guías de compra, y consejos útiles que te ayudarán a tomar decisiones informadas al elegir tu próximo dispositivo. Ya sea que estés buscando el último lanzamiento de iPhone, explorando opciones de teléfonos Android, o deseando conocer las innovaciones emergentes en la industria, Mundo ceular es tu compañero de confianza.
-                ¡Únete a nuestra comunidad tecnológica y descubre el futuro de la comunicación móvil en Mundo celular! Tu interés por la tecnología nos impulsa a seguir explorando, investigando y compartiendo todo lo que el mundo de los celulares tiene para ofrecer. ¡Bienvenido a bordo de este emocionante viaje tecnológico!.</p>
-        </div>
-        <div class="cajas-asides">
-            <div class="tarjetas-laterales pb-3">
-                <div class="card w-100 h-100">
-                    <img src="../img/arreglo celular.jpg" class="card-img-top" alt="Arreglo de celulares">
-                    <div class="card-body">
-                      <h5 class="card-title">Devuelve la vida a tu celular</h5>
-                      <p class="card-text">Reparamos dispositivos con experiencia y rapidez en nuestra tienda especializada.</p>
-                      <a href="#" class="btn btn-primary">Agenda tu hora</a>
-                    </div>
-                  </div>
-            </div>
-            <div class="tarjetas-laterales pt-3">
-                <div class="card w-100 h-100">
-                    <img src="../img/cargador.jpg" class="card-img-top" alt="Cargador de celular">
-                    <div class="card-body">
-                      <h5 class="card-title">Potencia tus dispositivos</h5>
-                      <p class="card-text">Descubre nuestra selección de cargadores para celulares de alta calidad en nuestra tienda.</p>
-                      <a href="#" class="btn btn-primary">Compra aqui</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </section>
-    <section class="preguntas d-flex flex-column justify-content-center align-items-center ">
-        <h1 class="titulo my-3 w-100 text-center" style=" font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: black;">Preguntas frecuentes</h1>
-        <div class="accordion accordion-flush w-100" id="accordionFlushExample " data-bs-theme="dark">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  ¿Arreglan todo tipo de celular?
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                  En "Mundo Celular," solucionamos cualquier problema con tu celular. Desde reparaciones simples hasta las más complejas, ¡confía en nosotros para mantener tu dispositivo en perfecto estado!</div>
+    <section class="tarjetas d-flex justify-content-center align-items-center ">
+        <div class="row">
+            <div class="col-4">
+              <div class="card text-center" style=" width: 20rem; height: 25rem;">
+                <img src="img/carcasas 2.jpg"  class="card-img-top" alt="carcasas">
+                <div class="card-body">
+                  <h4 class="card-title">Protege tu celular</h4>
+                  <p class="card-text ">Protege tu smartphone con estilo: descubre nuestras carcasas de alta calidad.</p>
+                </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  ¿En que direccion estan ubicados?
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Ubicados en Centenario con Freire, frente a la Universidad de Atacama Casa Central, en "Mundo Celular" estamos listos para reparar y mejorar tu dispositivo. ¡Visítanos hoy para soluciones rápidas y confiables!.</div>
+            <div class="col-4">
+              <div class="card text-center" style=" width: 20rem; height: 25rem;">
+                <img src="img/cargadores celular png.jpg" class="card-img-top" alt="protector">
+                <div class="card-body">
+                  <h4 class="card-title">Potencia tus dispositivos</h4>
+                  <p class="card-text">Descubre nuestra selección de cargadores para celulares de alta calidad en nuestra tienda.</p>
+                </div>
               </div>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  ¿Cual es el horario de atencion?
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">En "Mundo Celular," te atendemos con comodidad de lunes a sábado, desde las 10 de la mañana hasta las 8 de la tarde. Nuestro horario flexible se adapta a tu conveniencia, brindándote soluciones para tu celular cuando más lo necesitas. ¡Visítanos y descubre un servicio que se ajusta a tu agenda!</div>
+            <div class="col-4">
+              <div class="card text-center" style=" width: 20rem; height: 25rem;">
+                <img src="img/protector de pantalla.jpg" class="card-img-top" alt="protector">
+                <div class="card-body">
+                  <h4 class="card-title">Proteje tu celular</h4>
+                  <p class="card-text">Salvaguarda la pantalla de tu celular con nuestra protección de vanguardia.</p>
+                </div>
               </div>
             </div>
           </div>
+    </section>
+    <section class="noticia d-flex justify-content-center align-items-center">
+        <div class="card h-100 d-flex justify-content-center align-items-center" style="background-color: #B2B2B2;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/Galaxy-S23-Series.jpg" class="img-fluid rounded-start p-2" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h1 class="card-title text-center mb-4">La nueva generación de Samsung</h1>
+                  <p class="card-text text-center">El Samsung Galaxy S23 Ultra se erige como un auténtico buque insignia, combinando un rendimiento sorprendente, una pantalla deslumbrante que te sumerge en tus contenidos favoritos y una cámara de nivel profesional que redefine la forma en que capturamos momentos. Desde su diseño elegante hasta sus capacidades innovadoras, este smartphone demuestra que la excelencia no tiene límites. Con el S23 Ultra, estás experimentando lo último en tecnología móvil, una experiencia verdaderamente ultramoderna en la palma de tu mano que supera todas las expectativas.</p>
+                </div>
+              </div>
+            </div>
+        </div>
     </section>
     <section class="caja-redes-sociales">
       <div class="row h-100">
