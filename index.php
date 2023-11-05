@@ -18,6 +18,7 @@
           <a class="linkeado" href="index.php">Inicio</a>
           <a class="linkeado" href="nosotros/nosotros.html">Nosotros</a>
           <a class="linkeado" href="formulario/formulario.php">Formulario</a>
+          <a class="linkeado" href="crud/principal.php">Crud</a>
           <a class="linkeado" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Cuenta</a>
       </nav>
   </nav>
