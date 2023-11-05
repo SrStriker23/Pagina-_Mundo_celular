@@ -4,7 +4,7 @@
     <title>CRUD php</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="../css/styles2.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
@@ -17,7 +17,7 @@
             return respuesta
         }
     </script>
-      <header class="header">
+    <header class="header">
     <a class="logo-pequeño" href="../index.html">
         <img src="../img/2.png" alt="Logo pequeño">
     </a>
@@ -28,7 +28,6 @@
           <a class="linkeado" href="../formulario/formulario.php">Formulario</a>
           <a class="linkeado" href="../crud/principal.php">CRUD</a>
           <a class="linkeado" href="../../busquda/busqueda_ajax/busqueda.html">Busqueda</a>
-          <a class="linkeado" href="busqueda_ajax/busqueda.html">Busqueda1</a>
       </nav>
   </nav>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
