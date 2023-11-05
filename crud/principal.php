@@ -4,7 +4,7 @@
     <title>CRUD php</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../css/styles2.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
@@ -102,12 +102,12 @@
                     <input type="radio" class="form-check-input" name="sexo" value="Otro"> Otro
                     <input type="date" max="2024-01-01" class="form-control mb-3" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
                     <input type="number" min="18" max="120" class="form-control mb-3" name="edad" placeholder="Edad">
-                    <div class="d-flex justify-content-center align-items-center"><button type="submit" class="btn btn-primary" name="btnregistrar" value="ok">Registrar</button></div>
+                    <div class="d-flex justify-content-center align-items-center"><button type="submit" class="btn btn-dark" name="btnregistrar" value="ok">Registrar</button></div>
                 </form>
             </div>
             <div class="col-md-9">
                 <table class="table bg-white">
-                    <thead class="table-success table-striped">
+                    <thead class="table-dark table-striped">
                         <tr>
                             <th>Nombre</th>
                             <th>Apellidos</th>

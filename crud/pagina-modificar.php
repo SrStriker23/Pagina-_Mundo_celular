@@ -24,9 +24,12 @@ $sql=$conexion->query("SELECT * FROM formulario WHERE rut='$rut'");
             <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre" value="<?=$datos->nombre?>">
             <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos" value="<?=$datos->apellidos?>">
             <input type="text" class="form-control mb-3" name="direccion" placeholder="Direccion"  value="<?=$datos->direccion?>">
-            <input type="text" class="form-control mb-3" name="sexo" placeholder="Sexo"  value="<?=$datos->sexo?>">
-            <input type="text" class="form-control mb-3" name="fecha_nacimiento" placeholder="Fecha de nacimiento"  value="<?=$datos->apellidos?>">
-            <input type="text" class="form-control mb-3" name="edad" placeholder="Edad"  value="<?=$datos->edad?>">
+            <input type="radio" class="form-check-input" name="sexo" value="Hombre" value="<?=$datos->sexo?>"> Hombre<br>
+            <input type="radio" class="form-check-input" name="sexo" value="Mujer" value="<?=$datos->sexo?>"> Mujer<br>
+            <input type="radio" class="form-check-input" name="sexo" value="Otro" value="<?=$datos->sexo?>"> Otro
+
+            <input type="date" class="form-control mb-3" name="fecha_nacimiento" placeholder="Fecha de nacimiento"  value="<?=$datos->apellidos?>">
+            <input type="number" class="form-control mb-3" name="edad" placeholder="Edad"  value="<?=$datos->edad?>">
             <button type="submit" class="btn btn-primary" name="btnmodificar" value="ok">Modificar</button>
             <?php
             }
