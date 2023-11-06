@@ -24,7 +24,7 @@
   </header>
   <nav class="navegador">
       <nav>
-          <a class="linkeado" href="../index.html">Inicio</a>
+          <a class="linkeado" href="../index.php">Inicio</a>
           <a class="linkeado" href="../formulario/formulario.php">Formulario</a>
           <a class="linkeado" href="../crud/principal.php">CRUD</a>
           <a class="linkeado" href="../../busquda/busqueda_ajax/busqueda.html">Busqueda</a>
@@ -77,7 +77,7 @@
     </div>
     
     <!--Crud -->
-    <section class="caja-crud">
+    <section class="caja-crud" style=" height: auto;">
     <div class="container my-5">
         <h1 class="text-center">CRUD CON PHP</h1>
     </div>
