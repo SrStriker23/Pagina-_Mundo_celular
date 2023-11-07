@@ -88,7 +88,7 @@
         ?>
         <div class="row">
             <div class="col-md-3">
-                <form class="bg-white" method="POST">
+                <form class="" method="POST">
                     <?php 
                     include("conexion.php");
                     include("registro.php");
