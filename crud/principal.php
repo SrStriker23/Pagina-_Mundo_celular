@@ -30,53 +30,8 @@
           <a class="linkeado" href="../../busquda/busqueda_ajax/busqueda.html">Busqueda</a>
       </nav>
   </nav>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Inicio de sesion/Registro</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form action="" class="form-modal d-flex justify-content-center align-items-center ">
-              <div class="wrapper">
-                <div class="card-switch">
-                    <label class="switch">
-                       <input type="checkbox" class="toggle">
-                       <span class="slider"></span>
-                       <span class="card-side"></span>
-                       <div class="flip-card__inner">
-                          <div class="flip-card__front">
-                             <div class="title">Inicio de sesion</div>
-                             <form class="flip-card__form" action="">
-                                <input class="flip-card__input" name="email" placeholder="Correo electronico" type="email">
-                                <input class="flip-card__input" name="password" placeholder="contraseña" type="password">
-                                <button class="flip-card__btn">Siguiente</button>
-                             </form>
-                          </div>
-                          <div class="flip-card__back">
-                            <a href="../formulario/formulario.php" style="text-decoration: none;" class="title">Registro</a>
-                             <form class="flip-card__form" action="">
-                                <input class="flip-card__input" placeholder="Nombre" type="name">
-                                <input class="flip-card__input" name="email" placeholder="Correo electronico" type="email">
-                                <input class="flip-card__input" name="password" placeholder="Contraseña" type="password">
-                                <button class="flip-card__btn">Crear</button>
-                             </form>
-                          </div>
-                       </div>
-                    </label>
-                </div>   
-           </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <!--Crud -->
+
+        <!--Crud -->
     <section class="caja-crud" style=" height: auto;">
     <div class="container my-5">
         <h1 class="text-center">CRUD CON PHP</h1>

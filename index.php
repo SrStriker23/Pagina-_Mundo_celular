@@ -1,5 +1,17 @@
+<?php
+session_start();
+if(empty($_SESSION["usuario"])){
+  header("location:crud/login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
+  <script>
+        function salir(){
+            var respuesta=confirm("¿Estas que quiere cerrar sesion?");
+            return respuesta
+        }
+  </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +28,17 @@
   <nav class="navegador">
       <nav>
           <a class="linkeado" href="index.php">Inicio</a>
-          <a class="linkeado" href="nosotros/nosotros.html">Nosotros</a>
+          <a class="linkeado" href="nosotros/nosotros.php">Nosotros</a>
           <a class="linkeado" href="formulario/formulario.php">Formulario</a>
-          <a class="linkeado" href="crud/login.php">CRUD</a>
-          <a class="linkeado" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Cuenta</a>
       </nav>
   </nav>
+  <nav class="navegador">
+      <nav>
+          <a class="linkeado"><?php echo $_SESSION["usuario"]; ?></a>
+          <a onclick="return salir()" class="linkeado" href="crud/cerrar.php">Salir</a>
+      </nav>
+  </nav>
+  <!--
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -30,7 +47,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <form action="" class="form-modal d-flex justify-content-center align-items-center ">
+            <div  class="form-modal d-flex justify-content-center align-items-center ">
               <div class="wrapper">
                 <div class="card-switch">
                     <label class="switch">
@@ -41,14 +58,15 @@
                           <div class="flip-card__front">
                              <div class="title">Inicio de sesion</div>
                              <form class="flip-card__form" method="post" action="">
-                                <input class="flip-card__input" name="usuario" placeholder="Correo electronico" type="text">
-                                <input class="flip-card__input" name="password" placeholder="contraseña" type="password">
+                             <input class="flip-card__input" type="text" name="usuario" placeholder="Nombre de usuario" maxlength="16">
+                                <input class="flip-card__input" type="password" name="password" placeholder="Contraseña">
+                                <a href=""></a>
                                 <input class="flip-card__btn" name="btningresar" type="submit" value="Iniciar">
                              </form>
 
                           </div>
                           <div class="flip-card__back">
-                            <a href="formulario/formulario.html" style="text-decoration: none;" class="title">Registro</a>
+                            <div class="title">Registro</div>
                              <form class="flip-card__form" action="">
                                 <input class="flip-card__input" placeholder="Nombre" type="name">
                                 <input class="flip-card__input" name="email" placeholder="Correo electronico" type="email">
@@ -60,7 +78,7 @@
                     </label>
                 </div>   
            </div>
-            </form>
+        </div>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
@@ -68,6 +86,7 @@
         </div>
       </div>
     </div>
+-->
     <div class="carrusel">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">

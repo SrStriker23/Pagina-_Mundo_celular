@@ -1,3 +1,9 @@
+<?php
+session_start();
+if(empty($_SESSION["usuario"])){
+  header("location:crud/login.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,10 +22,15 @@
   <nav class="navegador">
       <nav>
           <a class="linkeado" href="../index.php">Inicio</a>
-          <a class="linkeado" href="../nosotros/nosotros.html">Nosotros</a>
+          <a class="linkeado" href="../nosotros/nosotros.php">Nosotros</a>
           <a class="linkeado" href="../formulario/formulario.php">Formulario</a>
           <a class="linkeado" href="../crud/login.php">CRUD</a>
-          <a class="linkeado" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Cuenta</a>
+      </nav>
+  </nav>
+  <nav class="navegador">
+      <nav>
+          <a class="linkeado"><?php echo $_SESSION["usuario"]; ?></a>
+          <a onclick="return salir()" class="linkeado" href="crud/cerrar.php">Salir</a>
       </nav>
   </nav>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
