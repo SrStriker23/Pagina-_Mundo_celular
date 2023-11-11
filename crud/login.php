@@ -12,12 +12,14 @@
     include("controlador.php");
      ?>    
     <div class="login">
-  <form id="form" method="post" class="form">
-    <h2>Bienvenido a Mundo celular</h2>
-    <input type="text" name="usuario" placeholder="Nombre de usuario" maxlength="16">
-    <input type="password" name="password" placeholder="Contraseña">
-    <input class="submit" name="btningresar" type="submit" value="Iniciar">
-</form>
-</div>
+      <form id="form" method="post" class="form">
+        <h2>Bienvenido a Mundo celular</h2>
+        <input type="text" name="usuario" placeholder="Nombre de usuario" maxlength="16">
+        <input type="password" name="password" placeholder="Contraseña">
+
+        <input class="submit" name="btningresar" type="submit" value="Iniciar">
+        
+    </form>
+  </div>
 </body>
 </html>

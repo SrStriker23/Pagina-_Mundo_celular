@@ -1,9 +1,3 @@
-<?php
-session_start();
-if(empty($_SESSION["usuario"])){
-  header("location:crud/login.php");
-}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,76 +8,12 @@ if(empty($_SESSION["usuario"])){
     <link rel="stylesheet" href="../css/styles2.css">
 </head>
 <body>
-<script>
-        function salir(){
-            var respuesta=confirm("¿Estas que quiere cerrar sesion?");
-            return respuesta
-        }
-  </script>
+
   <header class="header">
-    <a class="logo-pequeño" href="../index.html">
+    <div class="logo-pequeño">
         <img src="../img/2.png" alt="Logo pequeño">
-    </a>
-  </header>
-  <nav class="navegador">
-      <nav>
-          <a class="linkeado" href="../index.php">Inicio</a>
-          <a class="linkeado" href="../nosotros/nosotros.php">Nosotros</a>
-          <a class="linkeado" href="../formulario/formulario.php">Formulario</a>
-          <a class="linkeado" href="../crud/login.php">CRUD</a>
-      </nav>
-  </nav>
-  <nav class="navegador">
-      <nav>
-          <a class="linkeado"><?php echo $_SESSION["usuario"]; ?></a>
-          <a onclick="return salir()" class="linkeado" href="../crud/cerrar.php">Salir</a>
-      </nav>
-  </nav>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Inicio de sesion/Registro</h1>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <form action="" class="form-modal d-flex justify-content-center align-items-center ">
-              <div class="wrapper">
-                <div class="card-switch">
-                    <label class="switch">
-                       <input type="checkbox" class="toggle">
-                       <span class="slider"></span>
-                       <span class="card-side"></span>
-                       <div class="flip-card__inner">
-                          <div class="flip-card__front">
-                             <div class="title">Inicio de sesion</div>
-                             <form class="flip-card__form" action="">
-                                <input class="flip-card__input" name="email" placeholder="Correo electronico" type="email">
-                                <input class="flip-card__input" name="password" placeholder="contraseña" type="password">
-                                <button class="flip-card__btn">Siguiente</button>
-                             </form>
-                          </div>
-                          <div class="flip-card__back">
-                            <a href="../formulario/formulario.html" style="text-decoration: none;" class="title">Registro</a>
-                             <form class="flip-card__form" action="">
-                                <input class="flip-card__input" placeholder="Nombre" type="name">
-                                <input class="flip-card__input" name="email" placeholder="Correo electronico" type="email">
-                                <input class="flip-card__input" name="password" placeholder="Contraseña" type="password">
-                                <button class="flip-card__btn">Crear</button>
-                             </form>
-                          </div>
-                       </div>
-                    </label>
-                </div>   
-           </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button>
-          </div>
-        </div>
-      </div>
     </div>
+  </header>
     <div class="carrusel ">
         <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -108,14 +38,12 @@ if(empty($_SESSION["usuario"])){
       <div class="registrate my-3">
         <div class="text-center justify-content-center align-items-center my-3" style="font-size: 30px; color: black;">Registrate</div>
         <?php 
-        include("../crud/conexion.php");
-        include("../crud/registro.php");
+        include("conexion.php");
+        include("registro.php");
         ?>
         <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
         <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos">
         <input type="text" class="form-control mb-3" name="rut" placeholder="Rut">
-        <input type="text" class="form-control mb-3" name="usuario" placeholder="Usuario">
-        <input type="password" class="form-control mb-3" name="contraseña" placeholder="Contraseña">
         <div class="container-fluid my-2">
           <div class="row">
             <div class="col-6 d-flex flex-column align-items-center justify-content-center">Sexo</div>

@@ -6,8 +6,8 @@ if(!empty($_POST["btningresar"])){
 
     } else {
         $usuario=$_POST["usuario"];
-        $clave=$_POST["password"];
-        $sql=$conexion->query("SELECT * FROM usuario WHERE usuario='$usuario' and clave='$clave'");
+        $contraseña=$_POST["password"];
+        $sql=$conexion->query("SELECT * FROM formulario WHERE usuario='$usuario' and contraseña='$contraseña'");
         if ($datos=$sql->fetch_object()) {
             $_SESSION["usuario"]=$datos->usuario;
             header("location:../index.php");

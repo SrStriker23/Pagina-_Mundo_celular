@@ -14,6 +14,12 @@ if(empty($_SESSION["usuario"])){
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
+<script>
+        function salir(){
+            var respuesta=confirm("¿Estas que quiere cerrar sesion?");
+            return respuesta
+        }
+  </script>
   <header class="header">
     <a class="logo-pequeño" href="../index.html">
         <img src="../img/2.png" alt="Logo pequeño">
@@ -29,7 +35,7 @@ if(empty($_SESSION["usuario"])){
   <nav class="navegador">
       <nav>
           <a class="linkeado"><?php echo $_SESSION["usuario"]; ?></a>
-          <a onclick="return salir()" class="linkeado" href="crud/cerrar.php">Salir</a>
+          <a onclick="return salir()" class="linkeado" href="../crud/cerrar.php">Salir</a>
       </nav>
   </nav>
     
