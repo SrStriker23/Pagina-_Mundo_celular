@@ -13,7 +13,7 @@
         <h2>Bienvenido a Mundo celular</h2>    
         <?php
         include("conexion.php");
-        include("controlador.php");
+        include("controlador-crud.php");
         ?>   
         <input type="text" name="usuario" placeholder="Nombre de usuario" maxlength="16">
         <input type="password" name="password" placeholder="Contraseña">

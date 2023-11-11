@@ -67,10 +67,10 @@
                             <th>Nombre</th>
                             <th>Apellidos</th>
                             <th>Rut</th>
-                            <th>Direccion</th>
+                            <th>Usuario</th>
+                            <th>Contraseña</th>
                             <th>Sexo</th>
                             <th>Fecha de nacimiento</th>
-                            <th>Edad</th>
                             <th></th>
                             <th></th>
                         </tr>
@@ -85,10 +85,10 @@
                             <td><?= $datos->nombre ?></td>
                             <td><?= $datos->apellidos ?></td>
                             <td><?= $datos->rut ?></td>
-                            <td><?= $datos->direccion ?></td>
+                            <td><?= $datos->usuario?></td>
+                            <td><?= $datos->contraseña?></td>
                             <td><?= $datos->sexo ?></td>
                             <td><?= $datos->fecha_nacimiento ?></td>
-                            <td><?= $datos->edad ?></td>
                             <th><a href="pagina-modificar.php?rut=<?=$datos->rut?>" class="btn btn-info">Editar</a></th>
                             <th><a onclick="return eliminar()" href="principal.php?rut=<?=$datos->rut?>" class="btn btn-danger">Eliminar</a></th>
                         </tr>

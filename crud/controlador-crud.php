@@ -7,10 +7,10 @@ if(!empty($_POST["btningresar"])){
     } else {
         $usuario=$_POST["usuario"];
         $contraseña=$_POST["password"];
-        $sql=$conexion->query("SELECT * FROM formulario WHERE usuario='$usuario' and contraseña='$contraseña'");
+        $sql=$conexion->query("SELECT * FROM usuario WHERE usuario='$usuario' and clave='$contraseña'");
         if ($datos=$sql->fetch_object()) {
             $_SESSION["usuario"]=$datos->usuario;
-            header("location:../index.php");
+            header("location:principal.php");
         } else {
             echo '<div class="alert alert-danger">ACCESO DENEGADO</div>';
         }
