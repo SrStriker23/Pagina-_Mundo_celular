@@ -115,6 +115,7 @@ if(empty($_SESSION["usuario"])){
         <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos">
         <input type="text" class="form-control mb-3" name="rut" placeholder="Rut">
         <input type="text" class="form-control mb-3" name="usuario" placeholder="Nombre de usuario">
+        <input type="email" class="form-control mb-3" name="email" placeholder="Correo electronico">
         <input type="password" class="form-control mb-3" name="contraseña" placeholder="Contraseña">
         <div class="container-fluid my-2">
           <div class="row">

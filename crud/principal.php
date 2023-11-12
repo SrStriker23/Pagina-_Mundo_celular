@@ -50,12 +50,21 @@
                     <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
                     <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos">
                     <input type="text" class="form-control mb-3" name="rut" placeholder="Rut">
-                    <input type="text" class="form-control mb-3" name="direccion" placeholder="Direccion">
-                    <input type="radio" class="form-check-input" name="sexo" value="Hombre"> Hombre<br>
-                    <input type="radio" class="form-check-input" name="sexo" value="Mujer"> Mujer<br>
-                    <input type="radio" class="form-check-input" name="sexo" value="Otro"> Otro
+                    <input type="text" class="form-control mb-3" name="usuario" placeholder="Nombre de usuario">
+                    <input type="email" class="form-control mb-3" name="email" placeholder="Correo electronico">
+                    <input type="password" class="form-control mb-3" name="contraseña" placeholder="Contraseña">
+                    <div class="container-fluid my-2">
+                    <div class="row">
+                      <div class="col-6 d-flex flex-column align-items-center justify-content-center">Sexo</div>
+                        <div class="col-6">
+                          <input type="radio" class="form-check-input" name="sexo" value="Hombre"> Hombre<br>
+                          <input type="radio" class="form-check-input" name="sexo" value="Mujer"> Mujer<br>
+                          <input type="radio" class="form-check-input" name="sexo" value="Otro"> Otro
+                        </div>
+                      </div>
+                    </div>
                     <input type="date" max="2024-01-01" class="form-control mb-3" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
-                    <input type="number" min="18" max="120" class="form-control mb-3" name="edad" placeholder="Edad">
+
                     <div class="d-flex justify-content-center align-items-center"><button type="submit" class="btn btn-dark" name="btnregistrar" value="ok">Registrar</button></div>
                 </form>
             </div>

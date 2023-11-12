@@ -39,37 +39,22 @@
             </button>
           </div>
     </div>
-    <form action="" class="formulario" method="POST">
-      <div class="registrate my-3">
-        <div class="text-center justify-content-center align-items-center my-3" style="font-size: 30px; color: black;">Registrate</div>
-        <?php 
-        include("conexion.php");
-        include("registro.php");
-        ?>
-        <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
-        <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos">
-        <input type="text" class="form-control mb-3" name="rut" placeholder="Rut">
-        <input type="text" class="form-control mb-3" name="usuario" placeholder="Nombre de usuario">
-        <input type="email" class="form-control mb-3" name="email" placeholder="Correo electronico">
-        <input type="password" class="form-control mb-3" name="contraseña" placeholder="Contraseña">
-        <div class="container-fluid my-2">
-          <div class="row">
-            <div class="col-6 d-flex flex-column align-items-center justify-content-center">Sexo</div>
-            <div class="col-6">
-              <input type="radio" class="form-check-input" name="sexo" value="Hombre"> Hombre<br>
-              <input type="radio" class="form-check-input" name="sexo" value="Mujer"> Mujer<br>
-              <input type="radio" class="form-check-input" name="sexo" value="Otro"> Otro
+
+    <div class="form-login m-auto pt-4 bg-white">
+        <h3>Recuperar contraseña</h3>
+        <form action="cambiar-clave.php" method="post" class="row g-3" autocomplete="off">
+            <div class="form-floating">
+                <input class="form-control" type="email" name="email" id="email" placeholder="Correo electronico" required>
+                <label for="email">Correo electronico</label>
             </div>
-          </div>
-        </div> 
-        <input type="date" max="2024-01-01" class="form-control mb-3" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
-        <div class="d-flex justify-content-center align-items-center">
-          <button type="submit" class="btn btn-dark fs-5"
-              name="btnregistrar" value="ok" >Registrar
-          </button>
-        </div>
-      </div>
-    </form>
+            <div class="d-grid gap-3 col-3">
+                <button type="submit" class="btn btn-primary">Continuar</button>
+            </div>
+            <div class="col-12">
+                ¿no tienes cuenta? <a href="registrar-login.php">Registrate aqui</a>
+            </div>
+        </form>
+    </div>
 
     <section class="caja-redes-sociales">
       <div class="row h-100">

@@ -8,7 +8,7 @@ if(empty($_SESSION["usuario"])){
 <html lang="en">
   <script>
         function salir(){
-            var respuesta=confirm("¿Estas que quiere cerrar sesion?");
+            var respuesta=confirm("¿Estas seguro que quieres cerrar sesion?");
             return respuesta
         }
   </script>
