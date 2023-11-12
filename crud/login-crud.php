@@ -17,7 +17,6 @@
         ?>   
         <input type="text" name="usuario" placeholder="Nombre de usuario" maxlength="16">
         <input type="password" name="password" placeholder="Contraseña">
-
         <input class="submit" name="btningresar" type="submit" value="Iniciar">
         
     </form>

@@ -44,6 +44,8 @@
         <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
         <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos">
         <input type="text" class="form-control mb-3" name="rut" placeholder="Rut">
+        <input type="text" class="form-control mb-3" name="usuario" placeholder="Nombre de usuario">
+        <input type="password" class="form-control mb-3" name="contraseña" placeholder="Contraseña">
         <div class="container-fluid my-2">
           <div class="row">
             <div class="col-6 d-flex flex-column align-items-center justify-content-center">Sexo</div>
@@ -53,7 +55,7 @@
               <input type="radio" class="form-check-input" name="sexo" value="Otro"> Otro
             </div>
           </div>
-        </div>
+        </div> 
         <input type="date" max="2024-01-01" class="form-control mb-3" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
         <div class="d-flex justify-content-center align-items-center">
           <button type="submit" class="btn btn-dark fs-5"
