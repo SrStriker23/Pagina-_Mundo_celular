@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="../css/styles2.css">
 </head>
 <body>
-
   <header class="header">
     <div class="logo-pequeño">
         <img src="../img/2.png" alt="Logo pequeño">
