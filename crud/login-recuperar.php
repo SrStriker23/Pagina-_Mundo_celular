@@ -41,6 +41,7 @@
     </div>
 
     <div class="form-login m-auto pt-4 d-flex justify-content-center align-items-center flex-column" style="height:300px; width:95%; background-color:#B2B2B2;">
+  
         <h3>Recuperar contraseña</h3>
         <form class="d-flex justify-content-center align-items-center flex-column my-3" action="cambiar-clave.php" method="post" class="row g-3" autocomplete="off">
             <div class="">

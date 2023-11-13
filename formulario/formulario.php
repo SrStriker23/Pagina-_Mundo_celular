@@ -111,23 +111,23 @@ if(empty($_SESSION["usuario"])){
         include("../crud/conexion.php");
         include("../crud/registro.php");
         ?>
-        <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre">
-        <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos">
-        <input type="text" class="form-control mb-3" name="rut" placeholder="Rut">
-        <input type="text" class="form-control mb-3" name="usuario" placeholder="Nombre de usuario">
-        <input type="email" class="form-control mb-3" name="email" placeholder="Correo electronico">
-        <input type="password" class="form-control mb-3" name="contraseña" placeholder="Contraseña">
+        <input type="text" class="form-control mb-3" name="nombre" placeholder="Nombre" value="<?php if(isset($nombre)) echo $nombre ?>">
+        <input type="text" class="form-control mb-3" name="apellidos" placeholder="Apellidos" value="<?php if(isset($apellidos)) echo $apellidos ?>">
+        <input type="text" class="form-control mb-3" name="rut" placeholder="Rut" value="<?php if(isset($rut)) echo $rut ?>">
+        <input type="text" class="form-control mb-3" name="usuario" placeholder="Nombre de usuario" value="<?php if(isset($usuario)) echo $usuario ?>">
+        <input type="email" class="form-control mb-3" name="email" placeholder="Correo electronico" value="<?php if(isset($email)) echo $email ?>">
+        <input type="password" class="form-control mb-3" name="contraseña" placeholder="Contraseña" value="<?php if(isset($contraseña)) echo $contraseña ?>">
         <div class="container-fluid my-2">
           <div class="row">
             <div class="col-6 d-flex flex-column align-items-center justify-content-center">Sexo</div>
             <div class="col-6">
-              <input type="radio" class="form-check-input" name="sexo" value="Hombre"> Hombre<br>
+              <input type="radio" class="form-check-input" name="sexo" value="Hombre" > Hombre<br>
               <input type="radio" class="form-check-input" name="sexo" value="Mujer"> Mujer<br>
               <input type="radio" class="form-check-input" name="sexo" value="Otro"> Otro
             </div>
           </div>
         </div>
-        <input type="date" max="2024-01-01" class="form-control mb-3" name="fecha_nacimiento" placeholder="Fecha de nacimiento">
+        <input type="date" max="2024-01-01" class="form-control mb-3" name="fecha_nacimiento" placeholder="Fecha de nacimiento" value="<?php if(isset($fecha_nacimiento)) echo $fecha_nacimiento ?>" >
         <div class="d-flex justify-content-center align-items-center">
           <button type="submit" class="btn btn-dark fs-5"
               name="btnregistrar" value="ok" >Registrar

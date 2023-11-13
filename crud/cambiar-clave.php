@@ -117,8 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </html>
         <?php
     } else {
-        echo "El correo electrónico proporcionado no existe en la base de datos.";
+        header("location:login-recuperar.php");
     }
 }
-$conn->close();
 ?>

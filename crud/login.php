@@ -48,8 +48,8 @@
         include("conexion.php");
         include("controlador.php");
         ?>   
-        <input type="text" name="usuario" placeholder="Nombre de usuario" maxlength="16">
-        <input type="password" name="password" placeholder="Contraseña">
+        <input type="text" name="usuario" placeholder="Nombre de usuario" maxlength="16" value="<?php if(isset($usuario)) echo $usuario ?>">
+        <input type="password" name="password" placeholder="Contraseña" value="<?php if(isset($contraseña)) echo $contraseña ?>">
         <div class="text-center my-3" style="height: 40px;">
           <a class="links link-offset-2 link-underline link-underline-opacity-0 my-3" style="color: #FFF;" href="login-recuperar.php">¿Olvidaste tu contraseña?</a>
           <a class="links link-offset-2 link-underline link-underline-opacity-0" href="registrar-login.php" style="color: #FFF;">!Registrate aqui¡</a>
